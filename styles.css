@@ -10,8 +10,10 @@
   --primary: #fff;
   --secondary: #aed8e9;
   --icon-color: #757575;
+  --nav-color: #6202ee;
 }
-body{
+body {
+  background-color: antiquewhite;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -19,9 +21,13 @@ body{
   flex-direction: column;
   flex-wrap: wrap;
 }
-svg{
+svg {
   width: 30px;
   height: 30px;
 }
 
------ navbar -----
+/* ----- navbar ----- */
+.nav {
+  background-color: var(--nav-color);
+  fill: var(--primary);
+}
