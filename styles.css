@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: solid 1px blue;
 }
 :root {
   font-size: 16px;
@@ -12,3 +11,17 @@
   --secondary: #aed8e9;
   --icon-color: #757575;
 }
+body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+svg{
+  width: 30px;
+  height: 30px;
+}
+
+----- navbar -----
