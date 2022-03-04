@@ -16,18 +16,35 @@ body {
   background-color: antiquewhite;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
 svg {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 /* ----- navbar ----- */
 .nav {
   background-color: var(--nav-color);
   fill: var(--primary);
+  padding: 15px;
+  display: flex;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-right {
+  margin-left: auto;
+}
+
+/* ----- Form Container ---- */
+form {
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
 }
