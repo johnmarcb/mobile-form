@@ -17,15 +17,12 @@ body {
 svg {
   width: 25px;
   height: 25px;
-
-  border: solid 3px green;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  margin: auto;
 }
 /* ----- navbar ----- */
 .nav {
@@ -45,32 +42,16 @@ svg {
 }
 form {
   border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-}
-.input-container {
-  border: solid 1px blue;
   display: grid;
-  grid-template-columns: 30px repeat(5, 1fr);
-  padding: 5px 3px;
-  gap: 15px;
-  width: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: center;
+  align-items: center;
 }
-.input-container svg {
-  grid-column: 1/1;
+form svg {
+  grid-column: 1;
+  margin: auto;
 }
-.input-container > input {
-  grid-column: 2/5;
-  width: 100%;
-}
-.phone-container input {
-  grid-column: 2/4;
-}
-.phone-container select {
-  grid-column: 4/5;
-  width: 100%;
-}
-.svg-container {
-  width: 100px;
-  border: solid 1px red;
+form input {
+  padding: 8px;
+  grid-column: 2/8;
 }
