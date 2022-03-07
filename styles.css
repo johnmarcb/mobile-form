@@ -67,6 +67,7 @@ select {
   border: none;
   padding: 15px 0;
   margin: 3px 0;
+  box-shadow: none;
 }
 .grey {
   background-color: var(--secondary);
