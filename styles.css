@@ -22,7 +22,6 @@ svg {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
 }
 /* ----- navbar ----- */
 .nav {
@@ -41,17 +40,34 @@ svg {
   margin-left: auto;
 }
 form {
-  border: solid 1px black;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.section-container {
+  gap: 10px;
+  margin: 5px 0;
   align-items: center;
+  display: flex;
 }
-form svg {
-  grid-column: 1;
-  margin: auto;
+.section-container label {
+  display: flex;
 }
-form input {
-  padding: 8px;
-  grid-column: 2/8;
+.section-container input,
+.section-container select {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.tel-container {
+  display: grid;
+  /* grid-template-columns: 35px repeat(auto-fit, minmax(120px, 1fr)); */
+  grid-template-columns: 35px repeat(8, 1fr);
+}
+.tel-container input {
+  grid-column: 2 / 2;
+  /* margin-right: auto; */
+}
+.tel-container select {
+  grid-column: 7 / 10;
 }
