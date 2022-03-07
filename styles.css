@@ -6,17 +6,18 @@
   font-family: "Roboto", sans-serif;
   color: var(--primary);
   --primary: #fff;
-  --secondary: #aed8e9;
+  --secondary: #e8e8e8;
   --icon-color: #757575;
   --nav-color: #6202ee;
 }
 body {
-  background-color: var(--icon-color);
+  background-color: var(--primary);
   margin: auto;
+  height: fit-content;
 }
 svg {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .container {
@@ -25,17 +26,76 @@ svg {
 }
 /* ----- navbar ----- */
 .nav {
+  height: 50px;
   background-color: var(--nav-color);
   fill: var(--primary);
-  padding: 2px 10px;
+  padding: 0 10px;
   display: flex;
+  width: 100%;
 }
 .nav-left,
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 .nav-right {
   margin-left: auto;
+}
+/* ----- Form ----- */
+.form-container {
+  display: grid;
+  grid-template-columns: 25px repeat(10, 1fr);
+  gap: 10px;
+  margin: 10px;
+  margin-right: 20px;
+  color: var(--icon-color);
+  fill: var(--icon-color);
+}
+.form-container label {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 100%;
+}
+input,
+label,
+select {
+  border: none;
+  padding: 15px 0;
+  margin: 3px 0;
+}
+.grey {
+  background-color: var(--secondary);
+  border-bottom: solid 1px black;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.white {
+  border: solid 1px black;
+  border-radius: 3px;
+}
+.normal-input {
+  grid-column: 2 / 12;
+}
+.tel-input {
+  grid-column: span 6;
+}
+.tel-select {
+  grid-column: span 4;
+}
+.state-select {
+  grid-column: 2/7;
+}
+.zip-input {
+  grid-column: span 5;
+}
+.birthday-input {
+  grid-column: span 10;
+}
+select {
+  padding-left: 4px;
 }
